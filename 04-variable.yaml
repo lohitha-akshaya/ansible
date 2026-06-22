@@ -1,13 +1,9 @@
 - name: demo on variables
   hosts: presenthost
   connection: local
-  vars:
-   course: "Ansible"
-   trainer: "Siva Kumar"
-   duration: "150hrs"
+  vars_files: 
+  - 05-course.yaml
   tasks:
-  - name: something
-    vars:
-     course: " DevOps with AiOPS"
+  - name: text
     debug:
        msg: "Hi ,I am learing {{course}},trainer is {{trainer}}, duration is {{duration}}"
