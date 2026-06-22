@@ -1,0 +1,16 @@
+- name: reading inputs
+  hosts: presentlocal
+  vars_prompt:
+   - name: username
+     prompt: "Enter your name"
+     private: "false"
+
+   - name: password
+     prompt: "Enter psaaword"
+     private: "true"
+  
+  tasks:
+   - name: text
+     debug:
+       msg: "Username is {{username}}     paasword is {{password}}"
+     
