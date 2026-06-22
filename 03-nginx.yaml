@@ -2,8 +2,6 @@
   hosts: frontend
   tasks:
   - name: installing nginx
-    debug:
-     msg: "installing nginx"
     ansible.builtin.package:
        name: nginx
        state: present
