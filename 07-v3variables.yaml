@@ -7,7 +7,7 @@
      private: "false"
 
    - name: password
-     prompt: "Enter psaaword"
+     prompt: "Enter password"
      private: "true"
   
   tasks:
