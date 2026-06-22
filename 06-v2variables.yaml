@@ -1,10 +1,8 @@
 - name: demo on variables
   hosts: presenthost
   connection: local
-  vars:
-    course: "Ansible"
-    trainer: "Siva Kumar"
-    duration: "150HRS"
+  vars_files: 
+  - 05-course.yaml
   tasks:
   - name: text
     debug:
