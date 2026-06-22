@@ -1,0 +1,6 @@
+- name: demon on printing
+  hosts: frontend
+  tasks:
+  - name: hello
+    debug:
+      
