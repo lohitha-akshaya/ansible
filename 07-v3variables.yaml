@@ -1,5 +1,5 @@
 - name: reading inputs
-  hosts: presentlocal
+  hosts: presenthost
   vars_prompt:
    - name: username
      prompt: "Enter your name"
