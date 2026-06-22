@@ -1,5 +1,6 @@
 - name: reading inputs
   hosts: presenthost
+  connection: local
   vars_prompt:
    - name: username
      prompt: "Enter your name"
