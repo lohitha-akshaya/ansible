@@ -1,4 +1,4 @@
-- name: reading inputs
+- name: reading inputs cmd variables
   hosts: presenthost
   connection: local
   vars_prompt:
