@@ -8,9 +8,9 @@
   - name: check even
     debug: 
       msg: "{{ num }} is even"
-      when: num % 2 == 0
+    when: num % 2 == 0
   - name: check odd
     debug: 
       msg: "{{ num }} is odd"
-      when: num % 2 != 0
+    when: num % 2 != 0
   
