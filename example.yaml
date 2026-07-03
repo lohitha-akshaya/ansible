@@ -3,7 +3,7 @@
   connection: local
   become: yes
   vars:
-    num: 34
+    num: 33
   tasks:
   - name: check even
     debug: 
