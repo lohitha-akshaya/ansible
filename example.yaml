@@ -2,8 +2,10 @@
   hosts: localhost
   connection: local
   become: yes
-  vars:
-    num: 33
+  vars_prompt:
+    - name: num
+      prompt: "enter number:"
+      private: "false"
   tasks:
   - name: check even
     debug: 
